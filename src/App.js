@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.jpg';
 import './App.css';
 
 class App extends Component {
@@ -17,9 +17,10 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React 해볼
           </a>
         </header>
+        <div>이게모지</div>
       </div>
     );
   }
