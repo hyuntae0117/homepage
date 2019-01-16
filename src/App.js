@@ -6,8 +6,6 @@ import LeftNavigationContainer from './containers/LeftNavigationContainer';
 
 class App extends Component {
   render() {
-    const { onCreate, onRemove } = this.props;
-
     return (
       <div className="App">
         <p>

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "global": "^4.3.2",
+    "immer": "^1.10.5",
+    "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

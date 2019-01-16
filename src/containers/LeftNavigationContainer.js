@@ -3,13 +3,17 @@ import * as actions from '../actions/ActionConfig';
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => ({
-  items: state
+  state: state
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onClick: (index) => dispatch(actions.click(index)),
+  onClick: (id) => dispatch(actions.click(id)),
   onRemove: (index) => dispatch(actions.remove(index)),
-  onCreate: (index) => dispatch(actions.create())
+  onModify: (index) => dispatch(actions.modify(index)),
+  onCreate: () => dispatch(actions.create()),
+  onEditModeChange: () => dispatch(actions.editModeChange()),
+  onChangeTitle: (index, title) => dispatch(actions.changeTitle(index, title)),
+  onSave: (index, title) => dispatch(actions.save(index, title))
 })
 
 const LeftNavigationContainer = connect(mapStateToProps, mapDispatchToProps)(LeftNavigation);
