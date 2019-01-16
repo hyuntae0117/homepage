@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.jpg';
+import LeftNavigation from './components/LeftNavigation'
 import './App.css';
+import LeftNavigationContainer from './containers/LeftNavigationContainer';
 
 class App extends Component {
   render() {
+    const { onCreate, onRemove } = this.props;
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React 해볼
-          </a>
-        </header>
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+          Learn React 해볼까</p>
         <div>이게모지</div>
+        <LeftNavigationContainer>
+          하하
+        </LeftNavigationContainer>
       </div>
     );
   }
