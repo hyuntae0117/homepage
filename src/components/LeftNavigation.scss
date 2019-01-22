@@ -1,47 +1,52 @@
 .LeftNavigation {
-    width: 300px;
-    ul {
-        
-        padding: 0;
-        list-style-type: none;
-    }
-    li {
-        position: relative;
-        transition: background-color 0.2s ease-in;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
+  width: 300px;
+  background-color: black;
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    position: relative;
+    transition: background-color 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
 
-        >div {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-        }
-        >div>div {
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
-        >div>div:hover {
-            background-color: red
-        }
+    > div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
     }
-    li:hover {
-        background-color: coral
+    > div > div {
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
+    > div > div:hover {
+      background-color: red;
+    }
+  }
+  li:hover {
+    background-color: coral;
+  }
 
-    .clicked {
-        background-color: grey
-    }
+  .clicked {
+    background-color: grey;
+  }
 
-    .editor {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        p:hover {
-            background-color: coral
-        }
+  .editor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p:hover {
+      display: block;
+      background-color: coral;
     }
+  }
+
+  .edit {
+    display: hidden;
+  }
 }
