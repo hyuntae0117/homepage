@@ -4,6 +4,8 @@ import LeftNavigation from "./components/LeftNavigation";
 import TopNavigation from "./components/TopNavigation";
 import "./App.css";
 import LeftNavigationContainer from "./containers/LeftNavigationContainer";
+import GridBoard from "./components/GridBoard";
+import GridBoardContainer from "./containers/GridBoardContainer";
 
 class App extends Component {
   render() {
@@ -11,6 +13,7 @@ class App extends Component {
       <div className="App">
         <TopNavigation />
         <LeftNavigationContainer>하하</LeftNavigationContainer>
+        <GridBoardContainer />
       </div>
     );
   }

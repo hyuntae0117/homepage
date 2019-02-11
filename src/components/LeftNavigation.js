@@ -13,6 +13,7 @@ const LeftNavigation = ({
   onSave,
   onChangeTitle
 }) => {
+  state = state.leftnavigation;
   const clickedIndices = state.clickedIndices;
   const editing = state.editing;
   const itemList = state.items.map((item, i) =>

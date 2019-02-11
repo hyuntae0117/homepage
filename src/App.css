@@ -2,8 +2,12 @@
   transition: background-color 0.2s ease-in;
   margin: 0;
   padding: 0;
+}
+
+body {
   color: white;
 }
+
 .App {
   text-align: center;
 }
